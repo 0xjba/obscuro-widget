@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obscuro dApp</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Obscuro Gateway Widget Button -->
+    <button id="obscuro-button">
+        <span class="open-logo">◠.</span>
+        <span class="close-logo hidden">X</span>
+    </button>
+
+    <!-- Obscuro Gateway Panel -->
+    <div id="obscuro-panel" class="hidden">
+        <div>
+            <!-- Options Menu Button -->
+            <div id="options">⫶</div>
+
+            <!-- Dropdown Menu Content -->
+            <div id="options-menu" class="hidden">
+                <ul>
+                    <li><div id="revokeUserID">Revoke UserID</div></li>
+                </ul>
+            </div>
+            <h3>Obscuro Gateway</h3>
+            <hr>
+
+            <!-- Join Obscuro Network -->
+            <button id="join">JOIN OBSCURO</button>
+
+            <!-- Status Area -->
+            <div id="status"></div>
+
+            <!-- Accounts Table -->
+            <table id="accountsTable">
+                <thead>
+                    <tr>
+                        <th>Account</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Add necessary styles for the hidden class -->
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</body>
+
+</html>
